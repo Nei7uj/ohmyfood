@@ -3,8 +3,16 @@
 
 // Contenu de la page accueil
 
-.landing {
-  background: $primary_color;
-  font: 2rem;
+
+/* Small devices (phones, less than 768px) */
+@media (min-width: 767.98px) {
+
 }
+
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+  
+}
+
 
