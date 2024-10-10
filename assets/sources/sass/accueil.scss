@@ -1,11 +1,8 @@
 @import "variables";
 @import "global";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 
 // Contenu de la page accueil
-
-
-/* Small devices (phones, less than 768px) */
-@media (min-width: 768.1px) {
 
 body {
     background-color: #eaeaea;
@@ -19,6 +16,7 @@ h1 {
     font-weight: 700;
     margin: 0;
     padding: 39px 50px 0 50px;
+    font-family: "Roboto", sans-serif;
 }
 
 h1:hover {
@@ -31,6 +29,7 @@ h2 {
     font-weight: 700;
     padding: 0 0 26px 20px;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 h3 {
@@ -39,6 +38,11 @@ h3 {
     font-weight: 700;
     margin: 0;
     padding-bottom: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    margin: 0;
 }
 
 /**header**/
@@ -84,6 +88,7 @@ h3 {
     font-size: 16px;
     color: #353535;
     font-weight: 500;
+    font-family: "Roboto", sans-serif;
 }
 
 /**reservation**/
@@ -98,12 +103,32 @@ h3 {
     font-size: 16px;
     color: #353535;
     font-weight: 300;
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 29px 30px;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .reservation p:hover {
     cursor: default;
+}
+
+/**button**/
+
+.button {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /**fonction**/
@@ -132,12 +157,27 @@ h3 {
 }
 
 .fonction .choice__number {
-
+    display: inline-block;
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    top: 24px;
+    background-color: #9356DC;
+    height: 24px;
+    width: 24px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #f6f6f6;
+    font-weight: 500;
 }
 
 .fonction .choice__bloc {
     height: 72px;
     background-color: #f6f6f6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     padding-left: 33px;
     display: flex;
@@ -145,10 +185,144 @@ h3 {
     gap: 27px;
 }
 
+.fonction .choice__bloc--purple {
+    color: #9356dc;
+}
+
+.fonction .choice__bloc--grey {
+    color: #7e7e7e;
+}
+
+.fonction .choice__bloc p {
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+/**restaurant**/
+
+.restaurants {
+    padding: 54px 0 66px 0;
+    width: 100%;
+}
+
+.restaurants .rest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.restaurants .rest-container .hide {
+    display: none;
+}
+
+.restaurants .rest-container__link {
+    display: block;
+    width: 90%;
+    height: 251px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.restaurants .rest-container__tag {
+    border-radius: 3px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #99e2d0;
+    font-size: 14px;
+    color: #008766;
+    font-weight: 500;
+    padding: 7px 9px 7px 9px;
+    font-family: "Roboto", sans-serif;
+}
+
+.restaurants .rest-container__text {
+    display: flex;
+    height: 72px;
+    padding: 0 25px 0 13px;
+    font-size: 17px;
+    color: black;
+    font-weight: 300;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.restaurants .rest-container__img {
+    width: 100%;
+    height: 174px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+/**footer**/
+
+footer {
+    background-color: #353535;
+    padding: 22px 25px 22px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .footer__logo {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    font-family: Shrikhand;
+}
+
+footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+footer .footer__container a {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  footer .footer__container .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  footer .footer__container .icon-text a {
+    font-weight: 500;
+  }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (phones, less than 768px) */
+@media (min-width: 768.1px) {
 
 
 
