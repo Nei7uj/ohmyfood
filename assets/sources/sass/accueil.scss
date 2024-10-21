@@ -6,8 +6,8 @@
 
 body {
   background-color: #eaeaea;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -15,8 +15,8 @@ h1 {
   font-size: 24px;
   color: black;
   font-weight: 700;
-  margin: 0px;
-  padding: 39px 50px 0px 50px;
+  margin: 0;
+  padding: 39px 50px 0 50px;
 }
 h1:hover {
   cursor: default;
@@ -27,8 +27,8 @@ h2 {
   font-size: 24px;
   color: black;
   font-weight: 700;
-  padding: 0px 0px 26px 20px;
-  margin: 0px;
+  padding: 0 0 26px 20px;
+  margin: 0;
 }
 
 h3 {
@@ -36,12 +36,12 @@ h3 {
   font-size: 18px;
   color: black;
   font-weight: 700;
-  margin: 0px;
+  margin: 0;
   padding-bottom: 5px;
 }
 
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 /* Composants */
@@ -51,7 +51,7 @@ p {
   border-radius: 25px;
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: white;
@@ -77,7 +77,7 @@ p {
   bottom: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
   opacity: 0;
   z-index: -1;
   transition: opacity 300ms;
@@ -92,8 +92,8 @@ p {
 }
 .heart-bloc .heart-gradient {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   opacity: 0;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -102,8 +102,8 @@ p {
 }
 .heart-bloc .heart {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 .heart-bloc:hover > .heart {
   opacity: 0;
@@ -129,7 +129,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .top-bar__img {
   display: block;
@@ -151,7 +151,7 @@ p {
   color: #353535;
 }
 .location__input {
-  padding: 0px;
+  padding: 0;
   width: 110px;
   height: 100%;
   border: none;
@@ -181,8 +181,8 @@ p {
   font-size: 16px;
   color: #353535;
   font-weight: 300;
-  padding: 0px 30px 29px 30px;
-  margin: 0px;
+  padding: 0 30px 29px 30px;
+  margin: 0;
 }
 .reservation p:hover {
   cursor: default;
@@ -190,10 +190,10 @@ p {
 
 .fonction {
   background-color: white;
-  padding: 48px 0px 60px 0px;
+  padding: 48px 0 60px 0;
 }
 .fonction .container-fonc {
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,9 +209,9 @@ p {
 }
 .fonction .choice__number {
   display: inline-block;
-  margin: 0px;
+  margin: 0;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 24px;
   background-color: #9356DC;
   height: 24px;
@@ -228,7 +228,7 @@ p {
   height: 72px;
   background-color: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   padding-left: 33px;
   display: flex;
   align-items: center;
@@ -241,7 +241,7 @@ p {
   color: #7e7e7e;
 }
 .fonction .choice__bloc p {
-  margin: 0px;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: black;
@@ -249,7 +249,7 @@ p {
 }
 
 .restaurants {
-  padding: 54px 0px 66px 0px;
+  padding: 54px 0 66px 0;
   width: 100%;
 }
 .restaurants .rest-container {
@@ -292,7 +292,7 @@ p {
 .restaurants .rest-container__text {
   display: flex;
   height: 72px;
-  padding: 0px 25px 0px 13px;
+  padding: 0 25px 0px 13px;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   color: black;
@@ -343,7 +343,7 @@ footer .footer__container .icon-text a {
 /* Version Tablette */
 @media (min-width: 768.1px) and (max-width: 1023.9px) {
   .fonction .container-fonc {
-    padding: 0px 80px 0px 80px;
+    padding: 0 80px 0 80px;
   }
   .restaurants {
     padding-top: 30px;
@@ -366,7 +366,7 @@ footer .footer__container .icon-text a {
 /* Version Bureau */
 @media (min-width: 1024px) {
   h1 {
-    padding: 30px 0px 18px 0px;
+    padding: 30px 0 18px 0;
     font-size: 40px;
   }
   h2 {
@@ -374,7 +374,7 @@ footer .footer__container .icon-text a {
     font-size: 24px;
     color: black;
     font-weight: 700;
-    padding: 0px 0px 28px 0px;
+    padding: 0 0 28px 0;
   }
   .top-bar {
     height: 96px;
@@ -383,7 +383,7 @@ footer .footer__container .icon-text a {
     padding-bottom: 30px;
   }
   .reservation p {
-    padding: 0px 0px 18px 0px;
+    padding: 0 0 18px 0;
     line-height: 46px;
   }
   .content {
