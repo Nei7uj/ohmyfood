@@ -44,6 +44,7 @@ p {
   margin: 0;
 }
 
+
 /* Composants */
 .button {
   width: 218px;
@@ -120,6 +121,7 @@ p {
 .heart-bloc:not(:focus) > .heart-gradient {
   transition: opacity 500ms;
 }
+
 /* Header */
 .top-bar {
   position: relative;
@@ -336,8 +338,15 @@ footer .footer__container .icon-text {
   align-items: center;
   gap: 11px;
 }
+
 footer .footer__container .icon-text a {
   font-weight: 500;
+}
+
+footer .footer__container .icon-text .fa-solid {
+  width: 11px;
+  height: 13px;
+  font-size: 13px;
 }
 
 /* Version Tablette */
